@@ -3,7 +3,11 @@
 
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
-           review="https://android-review.googlesource.com/" />
+           review="https://android-review.googlesource.com/" />  
+  <remote  name="kernel-gl-hrk"
+           fetch="ssh://git@github.com/Kernel-GL-HRK/" />
+  <remote  name="leonsev"
+           fetch="ssh://git@github.com/leonsev/" />
   <default revision="refs/tags/android-9.0.0_r35"
            remote="aosp"
            sync-j="4" />

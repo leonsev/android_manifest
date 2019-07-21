@@ -712,8 +712,17 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
-  <project path="kernel/hikey-linaro" remote="leonsev" name="hikey-linaro-kernel" revision="gl-hikey960-4.9_custom" groups="kernel,hikey,pdk,training" />
-  <project path="vendor/gl" remote="leonsev" name="gl-android-training-2019" revision="Leonid.Gonchar" groups="training" />
+  <project path="kernel/hikey-linaro" remote="leonsev" name="hikey-linaro-kernel" revision="gl-hikey960-4.9_custom" groups="kernel,hikey,pdk,training" />  
+  <project path="vendor/gl/repo/gl-android-training-2019" remote="leonsev" name="gl-android-training-2019" revision="Leonid.Gonchar" groups="training">
+    <linkfile src="exam/config" dest="vendor/gl/config" />
+    <linkfile src="exam/interfaces" dest="vendor/gl/interfaces" />
+  </project>    
+  <project path="vendor/gl/repo/LedControlApp" remote="leonsev" name="led_control_app" revision="master" groups="training">
+    <linkfile src="app/src/main" dest="vendor/gl/apps/LedControlApp" />
+  </project>  
+  <project path="vendor/gl/repo/LedControlAppService" remote="leonsev" name="led_control_app_service" revision="master" groups="training">
+    <linkfile src="app/src/main" dest="vendor/gl/apps/LedControlAppService" />
+  </project>
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 

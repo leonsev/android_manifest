@@ -713,6 +713,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <project path="kernel/hikey-linaro" remote="leonsev" name="hikey-linaro-kernel" revision="gl-hikey960-4.9_custom" groups="kernel,hikey,pdk,training" />
+  <project path="device/linaro/hikey" remote="leonsev" name="hikey-linaro-device" revision="gl-hikey960_custom" groups="device,hikey,pdk,training" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
